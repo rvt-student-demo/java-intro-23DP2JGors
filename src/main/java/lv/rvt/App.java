@@ -6,9 +6,14 @@ public class App
     public static void main( String[] args ){
         Scanner scanner = new Scanner(System.in);
         
-        float num1 = scanner.nextFloat(), num2 = scanner.nextFloat();
-        double square_root = Math.sqrt(num1 + num2);
-        System.out.println(square_root);
+        int user_num = scanner.nextInt();
+
+        if (user_num < 0) {
+            System.out.println(user_num * -1);
+        }
+        else {
+            System.out.println(user_num);
+        }
 
         
     }
