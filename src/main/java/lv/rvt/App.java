@@ -7,15 +7,15 @@ public class App
     public static void main( String[] args ){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Where from? ");
-        int user_from = scanner.nextInt();
+        System.out.print("Last number? ");
+        int last_num = scanner.nextInt();
 
-        System.out.print("Where to? ");
-        int user_to = scanner.nextInt();
+        int summa = 0;
 
-        for(int i = user_from; i <= user_to; i++){
-            System.out.println(i);
+        for(int i = 1; i <= last_num; i ++) {
+             summa += i;
         }
+        System.out.println("The sum is " + summa);
         
             
 
