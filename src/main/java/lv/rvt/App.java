@@ -7,16 +7,15 @@ public class App
     public static void main( String[] args ){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Last number? ");
-        int last_num = scanner.nextInt();
+        System.out.print("Give a number: ");
+        int user_num = scanner.nextInt();
 
-        int summa = 0;
+        int factorial = 1;
 
-        for(int i = 1; i <= last_num; i ++) {
-             summa += i;
+        for(int i = 1; i <= user_num; i++) {
+            factorial *= i;
         }
-        System.out.println("The sum is " + summa);
-        
+        System.out.println("Factorial: " + factorial);
             
 
     }
