@@ -9,7 +9,7 @@ public class App
 
         int user_num = scanner.nextInt();
 
-        for(int i = 0; i <= user_num; i++){
+        for(int i = user_num; i <= 100; i++){
             System.out.println(i);
         }
         
