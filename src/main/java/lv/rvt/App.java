@@ -3,18 +3,13 @@ import java.util.Scanner;
 public class App 
 {
     public static void main( String[] args ){
-        Scanner scanner = new Scanner(System.in);
+        printUntilNumber(5);
+}
 
-        System.out.println("How many times? ");
-        int user_unput = scanner.nextInt();
-
-        for(int i = 0; i < user_unput; i++){
-            printText();
+        public static void printUntilNumber(int number) {
+        for (int i = 1; i <= number; i++) {
+            System.out.println(i);
         }
-    }
-
-    public static void printText() {
-        System.out.println("In a hole in the ground there lived a method");
-    }
+    } 
 }
 
