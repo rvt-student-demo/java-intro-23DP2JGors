@@ -3,12 +3,10 @@ import java.util.Scanner;
 public class App 
 {
     public static void main( String[] args ){
-        count(5);
+        division(3, 5);
     } 
-    public static void count(int fromNumberToOne) {
-        for (int i = fromNumberToOne; i >= 1; i--) {
-            System.out.println(i);
-        }
+    public static void division(float number1, float number2) {
+        System.out.println(number1 + " / " + number2 + " = " + number1/number2);
     }
 }
 
