@@ -5,8 +5,8 @@ public class App
     public static void main( String[] args ){
         
     } 
-    public static int numberUno() {
-        return 1;
+    public static String word() {
+        return "Hello";
     }
     
 }
