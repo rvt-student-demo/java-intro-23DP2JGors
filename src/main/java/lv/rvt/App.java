@@ -3,12 +3,18 @@ import java.util.Scanner;
 public class App 
 {
     public static void main( String[] args ){
-        int answer = sum(4, 3, 6, 1);
-        System.out.println("Sum: " + answer);
+
+        int answer =  smallest(2, 7);
+        System.out.println("Smallest: " + answer);
     } 
-    public static int sum(int numberOne, int numberTwo, int numberThree, int numberFour) {
-        int summa = 0;
-        return summa = numberFour + numberThree + numberOne + numberTwo;  
+    
+    public static int smallest(int number1, int number2) {
+         if (number1 < number2) {
+            return number1;
+         }
+         else {
+            return number2;
+         }
     }
 
     
