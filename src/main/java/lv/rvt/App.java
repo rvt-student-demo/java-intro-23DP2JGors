@@ -4,16 +4,18 @@ public class App
 {
     public static void main( String[] args ){
 
-        int answer =  smallest(2, 7);
-        System.out.println("Smallest: " + answer);
+        int answer =  greatest(2, 7, 3);
+        System.out.println("Greatest: " + answer);
     } 
-    
-    public static int smallest(int number1, int number2) {
-         if (number1 < number2) {
+
+    public static int greatest(int number1, int number2, int number3) {
+         if (number1 > number2 && number1 > number3) {
             return number1;
          }
-         else {
+         else if (number2 > number1 && number2 > number3) {
             return number2;
+         }else {
+            return number3;
          }
     }
 
