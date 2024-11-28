@@ -1,18 +1,19 @@
 package lv.rvt;
 import java.util.Scanner;
+import java.util.ArrayList;
 public class App 
 {
     public static void main( String[] args ){
-        printTriangle(4);;
+        ArrayList<String> wordlist = new ArrayList<>();
+
+        wordlist.add("Tom");
+        wordlist.add("Emma");
+        wordlist.add("Alex");
+        wordlist.add("Mary");
+
+        System.out.println(wordlist.get(2));
     } 
-    public static void printTriangle(int size) {
-        for(int i = 1; i <= size; i++) {
-            for(int j = 1; j <= i; j++) {
-                System.out.print("*");
-            }
-            System.out.println("");
-        }
-    }
+    
 
     }
 
