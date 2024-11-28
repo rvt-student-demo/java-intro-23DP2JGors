@@ -4,14 +4,19 @@ import java.util.ArrayList;
 public class App 
 {
     public static void main( String[] args ){
-        ArrayList<String> wordlist = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> wordlist = new ArrayList<>();
 
-        wordlist.add("Tom");
-        wordlist.add("Emma");
-        wordlist.add("Alex");
-        wordlist.add("Mary");
+        int user_number = scanner.nextInt();
 
-        System.out.println(wordlist.get(2));
+        while (user_number != 0) {
+            wordlist.add(user_number);
+            user_number = scanner.nextInt();
+        }
+        int sum = wordlist.get(1) + wordlist.get(2);
+        System.out.println(sum);
+
+        
     } 
     
 
