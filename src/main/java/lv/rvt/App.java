@@ -5,17 +5,15 @@ public class App
 {
     public static void main( String[] args ){
         Scanner scanner = new Scanner(System.in);
-        ArrayList<Integer> wordlist = new ArrayList<>();
+        ArrayList<String> wordlist = new ArrayList<>();
 
-        int user_number = scanner.nextInt();
-
-        while (user_number != 0) {
-            wordlist.add(user_number);
-            user_number = scanner.nextInt();
+        String user_input = scanner.nextLine();
+        while(user_input != ""){
+            wordlist.add(user_input);
+            user_input = scanner.nextLine();
         }
-        int sum = wordlist.get(1) + wordlist.get(2);
-        System.out.println(sum);
-
+        System.out.println("In total: " + wordlist.size());
+        
         
     } 
     
