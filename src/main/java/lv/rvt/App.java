@@ -12,7 +12,9 @@ public class App
             wordlist.add(user_input);
             user_input = scanner.nextLine();
         }
-        System.out.println("In total: " + wordlist.size());
+        int index = wordlist.size() - 1;
+        System.out.println(wordlist.get(0));
+        System.out.println(wordlist.get(index));
         
         
     } 
