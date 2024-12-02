@@ -5,16 +5,16 @@ public class App
 {
     public static void main( String[] args ){
         Scanner scanner = new Scanner(System.in);
-        ArrayList<String> wordlist = new ArrayList<>();
+        ArrayList<Integer> wordlist = new ArrayList<>();
 
-        String user_input = scanner.nextLine();
-        while(user_input != ""){
+        int user_input = scanner.nextInt();
+        while(user_input != -1){
             wordlist.add(user_input);
-            user_input = scanner.nextLine();
+            user_input = scanner.nextInt();
         }
-        int index = wordlist.size() - 1;
-        System.out.println(wordlist.get(0));
-        System.out.println(wordlist.get(index));
+        for(int i = 0; i < wordlist.size(); i++) {
+            System.out.println(wordlist.get(i));
+        }
         
         
     } 
