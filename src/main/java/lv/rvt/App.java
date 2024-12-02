@@ -12,7 +12,12 @@ public class App
             wordlist.add(user_input);
             user_input = scanner.nextInt();
         }
-        for(int i = 0; i < wordlist.size(); i++) {
+        System.out.print("from where? ");
+        int user_from = scanner.nextInt();
+        System.out.print("To where? ");
+        int user_to = scanner.nextInt();
+
+        for(int i = user_from; i <= user_to; i++) {
             System.out.println(wordlist.get(i));
         }
         
