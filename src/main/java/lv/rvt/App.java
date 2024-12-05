@@ -9,22 +9,25 @@ public class App
 
         int user_num = scanner.nextInt();
 
-        while (user_num != -1) {
+        while (user_num != 9999) {
             numlist.add(user_num);
             user_num = scanner.nextInt();
                 }
-                System.out.print("Search for: ");
-                int user_input = scanner.nextInt();
-    
-                for (int i = 0; i <= numlist.size(); i++) {
-                    if (user_input == numlist.get(i)) {
-                        System.out.println(user_input + " is at index " + i);
+
+                int smallest = numlist.get(0);
+                
+                for (int i = 0; i < numlist.size(); i++) {
+                    if (numlist.get(i) < smallest) {
+                        smallest = numlist.get(i);
+                        }
+                    }
+                    System.out.println("Smallest number: " + smallest);
+
+                    for (int i = 0; i < numlist.size(); i++){
+                        if (numlist.get(i) == smallest) {
+                            System.out.println("Found at index: " + i);
+                    }
+                }
             }
         }
-        
-        
-    } 
-    
-
-    }
 
