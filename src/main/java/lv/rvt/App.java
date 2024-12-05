@@ -7,20 +7,20 @@ public class App
         Scanner scanner = new Scanner(System.in);
         ArrayList<Integer> numlist = new ArrayList<>();
 
-        int user_input = scanner.nextInt();
-        while (user_input != -1) {
-            numlist.add(user_input);
-            user_input = scanner.nextInt();
-        }
+        int user_num = scanner.nextInt();
 
-        int greatest = numlist.get(0);
-
-        for (int i = 0; i < numlist.size(); i++) {
-            if (greatest < numlist.get(i)) {
-                greatest = numlist.get(i);
+        while (user_num != -1) {
+            numlist.add(user_num);
+            user_num = scanner.nextInt();
+                }
+                System.out.print("Search for: ");
+                int user_input = scanner.nextInt();
+    
+                for (int i = 0; i <= numlist.size(); i++) {
+                    if (user_input == numlist.get(i)) {
+                        System.out.println(user_input + " is at index " + i);
             }
         }
-        System.out.println("The greatest number in list: " + greatest);
         
         
     } 
