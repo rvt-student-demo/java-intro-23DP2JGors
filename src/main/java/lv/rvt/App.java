@@ -5,29 +5,20 @@ public class App
 {
     public static void main( String[] args ){
         Scanner scanner = new Scanner(System.in);
-        ArrayList<Integer> numlist = new ArrayList<>();
+        ArrayList<Integer> numbers = new ArrayList<>();
 
-        int user_num = scanner.nextInt();
+        int user_input = scanner.nextInt();
 
-        while (user_num != 9999) {
-            numlist.add(user_num);
-            user_num = scanner.nextInt();
-                }
-
-                int smallest = numlist.get(0);
-                
-                for (int i = 0; i < numlist.size(); i++) {
-                    if (numlist.get(i) < smallest) {
-                        smallest = numlist.get(i);
-                        }
-                    }
-                    System.out.println("Smallest number: " + smallest);
-
-                    for (int i = 0; i < numlist.size(); i++){
-                        if (numlist.get(i) == smallest) {
-                            System.out.println("Found at index: " + i);
-                    }
-                }
-            }
+        while(user_input != -1) {
+            numbers.add(user_input);
+            user_input = scanner.nextInt();
         }
+        int sum = 0;
+
+        for (int number: numbers) {
+            sum += number;
+        }
+        System.out.println("Sum: " + sum);
+        }
+    }
 
