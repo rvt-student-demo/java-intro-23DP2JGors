@@ -18,7 +18,9 @@ public class App
         for (int number: numbers) {
             sum += number;
         }
-        System.out.println("Sum: " + sum);
+        double average = (double) sum / numbers.size();
+
+        System.out.println("Average: " + average);
         }
     }
 
