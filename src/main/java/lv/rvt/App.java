@@ -5,22 +5,28 @@ public class App
 {
     public static void main( String[] args ){
         Scanner scanner = new Scanner(System.in);
-        ArrayList<Integer> numbers = new ArrayList<>();
+        ArrayList<String> names = new ArrayList<>();
 
-        int user_input = scanner.nextInt();
+        String user_name = scanner.nextLine(); 
+        while (user_name != "") {
+            names.add(user_name);
+            user_name = scanner.nextLine();
+        } 
+        System.out.print("Search for? ");
+        String user_input = scanner.nextLine();
 
-        while(user_input != -1) {
-            numbers.add(user_input);
-            user_input = scanner.nextInt();
+        boolean found = false;
+
+        for (String name: names) {
+            if (name.equals(user_input)) {
+                System.out.println(user_input + " was found!");
+                found = true;
+                break;
+            }
         }
-        int sum = 0;
-
-        for (int number: numbers) {
-            sum += number;
-        }
-        double average = (double) sum / numbers.size();
-
-        System.out.println("Average: " + average);
+        if(!found) {
+            System.out.println(user_input + " was not found!");
         }
     }
+}
 
